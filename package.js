@@ -14,7 +14,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.0.3');
+  api.versionsFrom(['1.0.3', '2.3']);
 
   api.use([
     'check',
@@ -26,7 +26,7 @@ Package.onUse(function(api) {
 
   api.imply([
     'kadira:flow-router@2.10.1',
-    'useraccounts:core@1.14.2',
+    'john-johnson-tech:core@1.14.2',
   ], ['client', 'server']);
 
   api.use([
